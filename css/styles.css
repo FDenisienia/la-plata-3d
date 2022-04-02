@@ -1,0 +1,61 @@
+.body-3d {
+    margin-top: 60px;
+    background-image: url(../imagenes/Background-body/cuadrados.jpg);
+    font-family: 'Roboto', sans-serif; 
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.contenedor-carrito {
+    position: fixed;
+    right: 0px;
+    z-index:1;
+    right: -1000px;
+    transition: 1s;
+    top: 52px;
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carrito-contenedor-mostrar {
+    top: 52px;
+    border-bottom-left-radius: 5px;
+    background-color: rgb(114, 113, 113);
+    transition: 1s;
+    right: 0;
+    height: 575px;
+}
+
+.contador-carrito {
+    margin-top: 2px;
+    position: fixed;
+    right: 15px;
+    z-index: 2;
+    width: 18px;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+@media (max-width: 420px) {
+    .contador-carrito {
+        right: 7px;
+    }
+}
+
+@media (max-width: 375px) {
+    .contador-carrito {
+        right: 0px;
+    }
+}
+
+.input-form {
+    outline: none;
+    box-shadow: none;
+}
